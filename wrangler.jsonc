@@ -10,9 +10,13 @@
     "not_found_handling": "404-page",
     "run_worker_first": true
   },
+  // Zone routes (not custom_domain): apex already has CF DNS / origin records.
+  // Worker intercepts all traffic for the zone hostname.
   "routes": [
-    { "pattern": "bigskyroi.com", "custom_domain": true },
-    { "pattern": "www.bigskyroi.com", "custom_domain": true }
+    { "pattern": "bigskyroi.com/*", "zone_name": "bigskyroi.com" },
+    { "pattern": "bigskyroi.com", "zone_name": "bigskyroi.com" },
+    { "pattern": "www.bigskyroi.com/*", "zone_name": "bigskyroi.com" },
+    { "pattern": "www.bigskyroi.com", "zone_name": "bigskyroi.com" }
   ],
   "observability": {
     "enabled": true
