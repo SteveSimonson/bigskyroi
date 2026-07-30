@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Big Sky ROI — Wall Street–Grade Amazon Product Investment Research</title>
+  <meta name="description" content="Institutional investment research for Amazon product capital allocation. Conviction scores, risk-adjusted ROI frameworks, position sizing, and desk notes for operators who treat inventory like a portfolio." />
+  <meta name="keywords" content="Amazon product investment, Amazon ROI, product research, private label capital, Amazon seller investment advice, inventory capital allocation, FBA ROI calculator, product conviction score" />
+  <link rel="canonical" href="https://bigskyroi.com/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#070B14" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bigskyroi.com/" />
+  <meta property="og:title" content="Big Sky ROI — Amazon Product Investment Desk" />
+  <meta property="og:description" content="Wall Street rigor for Amazon product bets. Conviction board, capital model, and research framework for operators allocating real inventory capital." />
+  <meta property="og:site_name" content="Big Sky ROI" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Big Sky ROI — Amazon Product Investment Desk" />
+  <meta name="twitter:description" content="Institutional research for Amazon product capital allocation — conviction scores, ROI model, desk notes." />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://bigskyroi.com/#website",
+        "url": "https://bigskyroi.com/",
+        "name": "Big Sky ROI",
+        "description": "Wall Street–grade investment research for Amazon product capital allocation.",
+        "publisher": { "@id": "https://bigskyroi.com/#org" },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://bigskyroi.com/#org",
+        "name": "Big Sky ROI, LLC",
+        "url": "https://bigskyroi.com/",
+        "description": "Investment research desk for Amazon product and e-commerce capital allocation.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "30 N Gould St, Suite R",
+          "addressLocality": "Sheridan",
+          "addressRegion": "WY",
+          "postalCode": "82801",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://parsimony.com/",
+          "https://catalyst88.com/",
+          "https://stevensimonson.com/",
+          "https://axioniq.org/"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://bigskyroi.com/#webpage",
+        "url": "https://bigskyroi.com/",
+        "name": "Big Sky ROI — Wall Street–Grade Amazon Product Investment Research",
+        "isPartOf": { "@id": "https://bigskyroi.com/#website" },
+        "about": [
+          { "@type": "Thing", "name": "Amazon product research" },
+          { "@type": "Thing", "name": "Capital allocation" },
+          { "@type": "Thing", "name": "E-commerce ROI" }
+        ],
+        "description": "Institutional investment research desk for Amazon product bets: conviction scores, risk frameworks, and capital models.",
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Big Sky ROI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Big Sky ROI is an investment research desk for Amazon product capital allocation. We apply institutional frameworks—conviction scores, risk-adjusted ROI, position sizing—to product and inventory decisions rather than generic seller tips."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this securities investment advice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Big Sky ROI publishes research frameworks and illustrative product theses for e-commerce operators. We are not a registered investment adviser and do not provide advice on stocks, bonds, or other securities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What hurdle rate do you use for inventory capital?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our base desk hurdle is approximately 45% cycle ROI and 18% net margin after FBA fees, referral fees, advertising, and other costs, with annualized return stress-tested against inventory hold periods."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is the Product Conviction Score calculated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The score blends seven factors: demand durability, competitive structure, margin structure, capital intensity, operational risk, brand/moat optionality, and exit liquidity. Each factor is scored and weighted into a 0–100 composite used on the conviction board."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Big Sky <span>ROI</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Primary">
+        <a href="#board">Conviction board</a>
+        <a href="#framework">Framework</a>
+        <a href="#calculator">Capital model</a>
+        <a href="/methodology/">Methodology</a>
+        <a href="/research/">Research</a>
+        <a class="nav-cta" href="#calculator">Run the model</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="ticker" aria-label="Market pulse">
+    <div class="ticker-track">
+      <span class="tick"><span class="tag">MACRO</span> <span class="sym">US eComm</span> spend growth <span class="up">+6.2% YoY</span></span>
+      <span class="tick"><span class="tag">AMZ</span> <span class="sym">Avg CPC</span> home &amp; kitchen <span class="dn">+4.1% MoM</span></span>
+      <span class="tick"><span class="tag">FBA</span> <span class="sym">Storage Q3</span> peak surcharge window <span class="up">WATCH</span></span>
+      <span class="tick"><span class="tag">FX</span> <span class="sym">CNY/USD</span> landed cost pressure <span class="dn">elevated</span></span>
+      <span class="tick"><span class="tag">CAT</span> <span class="sym">Pet</span> demand durability <span class="up">STRONG</span></span>
+      <span class="tick"><span class="tag">CAT</span> <span class="sym">Beauty tools</span> review density <span class="dn">crowded</span></span>
+      <span class="tick"><span class="tag">DESK</span> <span class="sym">Hurdle</span> cycle ROI ≥ 45% · net margin ≥ 18%</span>
+      <span class="tick"><span class="tag">RISK</span> <span class="sym">Tariff</span> scenario book <span class="up">updated</span></span>
+      <!-- duplicate for seamless loop -->
+      <span class="tick"><span class="tag">MACRO</span> <span class="sym">US eComm</span> spend growth <span class="up">+6.2% YoY</span></span>
+      <span class="tick"><span class="tag">AMZ</span> <span class="sym">Avg CPC</span> home &amp; kitchen <span class="dn">+4.1% MoM</span></span>
+      <span class="tick"><span class="tag">FBA</span> <span class="sym">Storage Q3</span> peak surcharge window <span class="up">WATCH</span></span>
+      <span class="tick"><span class="tag">FX</span> <span class="sym">CNY/USD</span> landed cost pressure <span class="dn">elevated</span></span>
+      <span class="tick"><span class="tag">CAT</span> <span class="sym">Pet</span> demand durability <span class="up">STRONG</span></span>
+      <span class="tick"><span class="tag">CAT</span> <span class="sym">Beauty tools</span> review density <span class="dn">crowded</span></span>
+      <span class="tick"><span class="tag">DESK</span> <span class="sym">Hurdle</span> cycle ROI ≥ 45% · net margin ≥ 18%</span>
+      <span class="tick"><span class="tag">RISK</span> <span class="sym">Tariff</span> scenario book <span class="up">updated</span></span>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Investment research desk · Amazon product capital</p>
+          <h1>Allocate inventory capital with <em>Wall Street</em> rigor.</h1>
+          <p class="hero-lede">
+            Big Sky ROI is where serious operators come for product investment advice—
+            conviction scores, risk-adjusted ROI, position sizing, and desk notes.
+            Not tips. A research process you can underwrite.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-gold btn-lg" href="#calculator">Open capital model →</a>
+            <a class="btn btn-ghost btn-lg" href="#board">View conviction board</a>
+            <a class="btn btn-sky btn-lg" href="/methodology/">Read methodology</a>
+          </div>
+          <div class="hero-stats" role="group" aria-label="Desk snapshot">
+            <div class="stat">
+              <div class="label">Desk hurdle</div>
+              <div class="value gold">≥45%</div>
+              <div class="sub">cycle ROI on inventory</div>
+            </div>
+            <div class="stat">
+              <div class="label">Net margin floor</div>
+              <div class="value long">≥18%</div>
+              <div class="sub">after fees + ads</div>
+            </div>
+            <div class="stat">
+              <div class="label">Factors scored</div>
+              <div class="value">7</div>
+              <div class="sub">conviction composite</div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="desk-panel" aria-label="Session ideas">
+          <div class="desk-panel-head">
+            <div class="title"><span class="live-dot" aria-hidden="true"></span> Session book · Top ideas</div>
+            <div class="asof" data-asof>—</div>
+          </div>
+          <div class="desk-rows">
+            <div class="desk-row">
+              <div>
+                <div class="name">Modular pet travel system</div>
+                <div class="meta">PET · Demand durability A · Moat optionality</div>
+              </div>
+              <span class="badge badge-buy">BUY</span>
+              <span class="score high">86</span>
+            </div>
+            <div class="desk-row">
+              <div>
+                <div class="name">Pro kitchen prep tool (narrow SKU)</div>
+                <div class="meta">HOME · Margin A− · Competitive B</div>
+              </div>
+              <span class="badge badge-buy">BUY</span>
+              <span class="score high">81</span>
+            </div>
+            <div class="desk-row">
+              <div>
+                <div class="name">Seasonal outdoor accessory</div>
+                <div class="meta">OUTDOOR · Capital intensity risk</div>
+              </div>
+              <span class="badge badge-hold">HOLD</span>
+              <span class="score mid">64</span>
+            </div>
+            <div class="desk-row">
+              <div>
+                <div class="name">Generic beauty device clone</div>
+                <div class="meta">BEAUTY · Review wall · CPC inflation</div>
+              </div>
+              <span class="badge badge-avoid">AVOID</span>
+              <span class="score low">38</span>
+            </div>
+            <div class="desk-row">
+              <div>
+                <div class="name">B2B consumable refill pack</div>
+                <div class="meta">SUPPLIES · Repeat · Exit liquidity</div>
+              </div>
+              <span class="badge badge-watch">WATCH</span>
+              <span class="score mid">72</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONVICTION BOARD -->
+    <section id="board" class="tight">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">01 — Conviction board</p>
+            <h2 class="section-title">Where the desk is deployed</h2>
+            <p class="section-lede">
+              Illustrative product theses scored on our seven-factor model.
+              Scores are research composites—not guarantees of returns.
+            </p>
+          </div>
+          <a class="btn btn-ghost" href="/research/">Full research book →</a>
+        </div>
+
+        <div class="board-wrap">
+          <table class="board-table">
+            <thead>
+              <tr>
+                <th>Idea</th>
+                <th>Category</th>
+                <th>Action</th>
+                <th class="right">Score</th>
+                <th class="right">Est. cycle ROI</th>
+                <th class="right">Net margin</th>
+                <th class="right">Capital</th>
+                <th>Momentum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="idea">Modular pet travel system</div>
+                  <div class="cat">Differentiated bundle · IP optionality</div>
+                </td>
+                <td class="cat">Pet</td>
+                <td><span class="badge badge-buy">BUY</span></td>
+                <td class="num right score high">86</td>
+                <td class="num right">62%</td>
+                <td class="num right">24%</td>
+                <td class="num right">$48k</td>
+                <td><span class="spark" aria-hidden="true"><i style="height:40%"></i><i style="height:55%"></i><i style="height:50%"></i><i style="height:70%"></i><i style="height:85%"></i><i style="height:90%"></i></span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="idea">Pro kitchen prep tool</div>
+                  <div class="cat">Narrow SKU · Price power in pro niche</div>
+                </td>
+                <td class="cat">Home</td>
+                <td><span class="badge badge-buy">BUY</span></td>
+                <td class="num right score high">81</td>
+                <td class="num right">54%</td>
+                <td class="num right">21%</td>
+                <td class="num right">$32k</td>
+                <td><span class="spark" aria-hidden="true"><i style="height:45%"></i><i style="height:48%"></i><i style="height:60%"></i><i style="height:58%"></i><i style="height:72%"></i><i style="height:78%"></i></span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="idea">B2B consumable refill pack</div>
+                  <div class="cat">Repeat purchase · Lower ad tax</div>
+                </td>
+                <td class="cat">Supplies</td>
+                <td><span class="badge badge-watch">WATCH</span></td>
+                <td class="num right score mid">72</td>
+                <td class="num right">48%</td>
+                <td class="num right">19%</td>
+                <td class="num right">$22k</td>
+                <td><span class="spark" aria-hidden="true"><i style="height:50%"></i><i style="height:55%"></i><i style="height:52%"></i><i style="height:60%"></i><i style="height:58%"></i><i style="height:65%"></i></span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="idea">Seasonal outdoor accessory</div>
+                  <div class="cat">High sell-through risk off-season</div>
+                </td>
+                <td class="cat">Outdoor</td>
+                <td><span class="badge badge-hold">HOLD</span></td>
+                <td class="num right score mid">64</td>
+                <td class="num right">41%</td>
+                <td class="num right">16%</td>
+                <td class="num right">$65k</td>
+                <td><span class="spark down" aria-hidden="true"><i style="height:80%"></i><i style="height:70%"></i><i style="height:55%"></i><i style="height:50%"></i><i style="height:42%"></i><i style="height:40%"></i></span></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="idea">Generic beauty device clone</div>
+                  <div class="cat">Review wall · CPC war · No moat</div>
+                </td>
+                <td class="cat">Beauty</td>
+                <td><span class="badge badge-avoid">AVOID</span></td>
+                <td class="num right score low">38</td>
+                <td class="num right">12%</td>
+                <td class="num right">7%</td>
+                <td class="num right">$55k</td>
+                <td><span class="spark down" aria-hidden="true"><i style="height:75%"></i><i style="height:60%"></i><i style="height:55%"></i><i style="height:40%"></i><i style="height:30%"></i><i style="height:22%"></i></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRAMEWORK -->
+    <section id="framework">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">02 — Research framework</p>
+            <h2 class="section-title">Seven factors. One underwritable score.</h2>
+            <p class="section-lede">
+              Every product idea is stress-tested like a deal memo—not a “hot niche” listicle.
+            </p>
+          </div>
+          <a class="btn btn-ghost" href="/methodology/">Full methodology →</a>
+        </div>
+        <div class="framework-grid">
+          <article class="frame-card">
+            <div class="num">01 · DEMAND</div>
+            <h3>Demand durability</h3>
+            <p>Is search and purchase intent structural or fad? Seasonality, replacement cycles, and category growth set the base rate.</p>
+          </article>
+          <article class="frame-card">
+            <div class="num">02 · STRUCTURE</div>
+            <h3>Competitive structure</h3>
+            <p>Share concentration, review barriers, brand incumbents, and private-label headroom. Crowded + paid-only traffic = short thesis.</p>
+          </article>
+          <article class="frame-card">
+            <div class="num">03 · MARGIN</div>
+            <h3>Margin structure</h3>
+            <p>Landed COGS, FBA, referral, returns, and realistic ACOS. We model contribution after the full Amazon tax stack.</p>
+          </article>
+          <article class="frame-card">
+            <div class="num">04 · CAPITAL</div>
+            <h3>Capital intensity</h3>
+            <p>MOQ, cash conversion cycle, storage exposure, and how long capital is trapped before free cash emerges.</p>
+          </article>
+          <article class="frame-card">
+            <div class="num">05 · OPS</div>
+            <h3>Operational risk</h3>
+            <p>Supply concentration, QC failure modes, hazmat, size-tier traps, and compliance landmines that wipe margin.</p>
+          </article>
+          <article class="frame-card">
+            <div class="num">06 · MOAT</div>
+            <h3>Brand &amp; moat optionality</h3>
+            <p>Differentiation path: design, IP, bundles, consumables, content, and whether price power can expand over time.</p>
+          </article>
+          <article class="frame-card">
+            <div class="num">07 · EXIT</div>
+            <h3>Exit liquidity</h3>
+            <p>Can you sell the brand, liquidate inventory, or pivot SKUs without a fire sale? Liquidity is a first-class risk factor.</p>
+          </article>
+          <article class="frame-card">
+            <div class="num">COMPOSITE</div>
+            <h3>Product Conviction Score</h3>
+            <p>Weighted 0–100 composite mapped to BUY / WATCH / HOLD / AVOID. Used on the board and in desk notes—always with scenarios.</p>
+          </article>
+          <article class="frame-card">
+            <div class="num">HURDLE</div>
+            <h3>Capital deployment gate</h3>
+            <p>Ideas that fail cycle ROI ≥45% or net margin ≥18% under base case do not get full capital—period. Exceptions require a written thesis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="tight">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">03 — How capital gets deployed</p>
+            <h2 class="section-title">From idea to position size</h2>
+          </div>
+        </div>
+        <div class="process">
+          <div class="step">
+            <div class="dot">1</div>
+            <h3>Screen</h3>
+            <p>Kill 90% with structure, fees, and demand base rates before deep work.</p>
+          </div>
+          <div class="step">
+            <div class="dot">2</div>
+            <h3>Model</h3>
+            <p>Full unit economics + inventory capital model under bull/base/bear.</p>
+          </div>
+          <div class="step">
+            <div class="dot">3</div>
+            <h3>Score</h3>
+            <p>Seven-factor conviction composite and explicit risk flags.</p>
+          </div>
+          <div class="step">
+            <div class="dot">4</div>
+            <h3>Size</h3>
+            <p>Position size from conviction, liquidity, and cash runway—not hope.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALCULATOR -->
+    <section id="calculator">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">04 — Capital model</p>
+            <h2 class="section-title">Underwrite the inventory bet</h2>
+            <p class="section-lede">
+              Interactive desk model. Adjust assumptions; we grade the deployment against institutional hurdles.
+            </p>
+          </div>
+        </div>
+        <div class="calc-layout">
+          <form class="calc-form" id="roi-form" autocomplete="off">
+            <h3>Assumptions</h3>
+            <div class="field-row">
+              <div class="field">
+                <label>Unit landed cost <span class="hint" data-bind="unitCost">$10.00</span></label>
+                <input id="unit-cost" type="range" min="3" max="40" step="0.5" value="10" />
+              </div>
+              <div class="field">
+                <label>Sell price <span class="hint" data-bind="sellPrice">$39.99</span></label>
+                <input id="sell-price" type="range" min="9" max="99" step="0.5" value="39.99" />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>First order units <span class="hint" data-bind="units">2,000</span></label>
+                <input id="units" type="range" min="200" max="10000" step="50" value="2000" />
+              </div>
+              <div class="field">
+                <label>FBA fee / unit <span class="hint" data-bind="fbaFee">$5.40</span></label>
+                <input id="fba-fee" type="range" min="2" max="15" step="0.1" value="5.4" />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>Referral fee <span class="hint" data-bind="referral">15%</span></label>
+                <input id="referral" type="range" min="8" max="20" step="0.5" value="15" />
+              </div>
+              <div class="field">
+                <label>Ad spend (ACOS proxy) <span class="hint" data-bind="adPct">14%</span></label>
+                <input id="ad-pct" type="range" min="0" max="40" step="1" value="14" />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label>Other (returns, promo) <span class="hint" data-bind="otherPct">4%</span></label>
+                <input id="other-pct" type="range" min="0" max="15" step="0.5" value="4" />
+              </div>
+              <div class="field">
+                <label>Cycle length <span class="hint" data-bind="months">4 mo</span></label>
+                <input id="months" type="range" min="1" max="12" step="1" value="4" />
+              </div>
+            </div>
+          </form>
+
+          <div class="calc-out" aria-live="polite">
+            <h3>Desk output</h3>
+            <div class="out-hero">
+              <div class="big" id="out-roi">—</div>
+              <div class="caption">Cycle ROI on inventory capital</div>
+            </div>
+            <div class="out-grid">
+              <div class="out-cell">
+                <div class="l">Inventory capital</div>
+                <div class="v" id="out-capital">—</div>
+              </div>
+              <div class="out-cell">
+                <div class="l">Cycle profit</div>
+                <div class="v" id="out-profit">—</div>
+              </div>
+              <div class="out-cell">
+                <div class="l">Net margin</div>
+                <div class="v" id="out-margin">—</div>
+              </div>
+              <div class="out-cell">
+                <div class="l">Profit / unit</div>
+                <div class="v" id="out-cpp">—</div>
+              </div>
+              <div class="out-cell">
+                <div class="l">Annualized ROI</div>
+                <div class="v" id="out-annualized">—</div>
+              </div>
+              <div class="out-cell">
+                <div class="l">BE vs capital*</div>
+                <div class="v" id="out-breakeven">—</div>
+              </div>
+            </div>
+            <div class="verdict" id="out-verdict">Adjust assumptions to grade this deployment.</div>
+            <p style="margin:0.85rem 0 0;font-size:0.72rem;color:var(--faint);font-family:var(--mono);">
+              *Simplified model: capital ≈ COGS × units. Does not include tooling, samples, or working-capital buffers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THESES -->
+    <section id="theses">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">05 — Featured theses</p>
+            <h2 class="section-title">How we write it up</h2>
+            <p class="section-lede">
+              Short investment memos—what we like, what can kill the trade, and how we’d size it.
+            </p>
+          </div>
+        </div>
+        <div class="thesis-grid">
+          <article class="thesis">
+            <div class="thesis-top">
+              <h3>Pet travel system — long inventory</h3>
+              <span class="badge badge-buy">BUY · 86</span>
+            </div>
+            <p class="thesis-body">
+              <strong>Thesis:</strong> Durable demand (travel + pet ownership), room for a modular bundle that lifts AOV,
+              and a path to branded content moat. Competition is fragmented; review barriers are real but surmountable with a 12–18 month plan.
+              <strong>Kill switches:</strong> freight spike + tariff stack that compresses contribution below $6/unit; ACOS stuck above 28% after month 6.
+            </p>
+            <div class="thesis-metrics">
+              <div class="m"><div class="l">Cycle ROI</div><div class="v" style="color:var(--long)">62%</div></div>
+              <div class="m"><div class="l">Net margin</div><div class="v">24%</div></div>
+              <div class="m"><div class="l">Position</div><div class="v">$48k</div></div>
+            </div>
+          </article>
+          <article class="thesis">
+            <div class="thesis-top">
+              <h3>Beauty device clone — pass</h3>
+              <span class="badge badge-avoid">AVOID · 38</span>
+            </div>
+            <p class="thesis-body">
+              <strong>Thesis rejected:</strong> Category is a paid-traffic arms race with entrenched review density.
+              Gross looks fine on a naive spreadsheet; after realistic ACOS and returns, capital earns single-digit cycle ROI.
+              <strong>Lesson:</strong> Margin structure without competitive structure is a trap. We do not buy “hot” categories—we buy underwritable economics.
+            </p>
+            <div class="thesis-metrics">
+              <div class="m"><div class="l">Cycle ROI</div><div class="v" style="color:var(--risk)">12%</div></div>
+              <div class="m"><div class="l">Net margin</div><div class="v" style="color:var(--risk)">7%</div></div>
+              <div class="m"><div class="l">Position</div><div class="v">$0</div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESK NOTE -->
+    <section id="desk-note" class="tight">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">06 — Desk note</p>
+            <h2 class="section-title">This week’s capital letter</h2>
+          </div>
+        </div>
+        <article class="note">
+          <div class="note-aside">
+            <div class="date">Desk note · July 2026</div>
+            <h3>Stop buying revenue. Start buying free cash from inventory.</h3>
+            <div class="author">Big Sky ROI Research Desk</div>
+          </div>
+          <div class="note-body">
+            <p>
+              Most Amazon “research” optimizes for vanity: search volume, BSR screenshots, competitor count.
+              That is not investment analysis. <strong>Investment analysis asks whether a dollar of inventory capital
+              returns more than its opportunity cost after the full fee and ad stack—and how that path breaks.</strong>
+            </p>
+            <p>
+              This month we are raising the weight on <strong>exit liquidity</strong> and <strong>capital intensity</strong>
+              in the composite score. Storage and tariff scenarios have made “big first PO” strategies look smart on top-line
+              and fragile on cash. Prefer SKUs that can prove contribution with a smaller pilot, then scale.
+            </p>
+            <p>
+              Use the capital model on this page. If your idea only works at heroic ACOS assumptions, it is not an idea—
+              it is a hope. Hope is not a position.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">07 — FAQ</p>
+            <h2 class="section-title">Straight answers</h2>
+          </div>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>What is Big Sky ROI?</summary>
+            <p>An investment research desk for Amazon product capital allocation. We publish frameworks, conviction scoring, capital models, and desk notes so operators can underwrite inventory like a portfolio—not chase niches.</p>
+          </details>
+          <details>
+            <summary>Is this securities or stock market advice?</summary>
+            <p>No. We focus on e-commerce product and inventory decisions. Big Sky ROI is not a registered investment adviser and does not provide advice regarding stocks, bonds, funds, or other securities.</p>
+          </details>
+          <details>
+            <summary>What is your hurdle rate?</summary>
+            <p>Base case: cycle ROI on inventory capital ≥45% and net margin after Amazon fees, ads, and other costs ≥18%. We annualize against hold period and stress ad inflation and COGS shocks.</p>
+          </details>
+          <details>
+            <summary>How should I size a position?</summary>
+            <p>Size from conviction score, cash runway, and exit liquidity—not from MOQ pressure. High-conviction ideas can take a larger share of deployable capital; crowded, ad-dependent ideas stay small or zero until structure improves.</p>
+          </details>
+          <details>
+            <summary>Do you sell products or only research?</summary>
+            <p>The desk is research-first. Product and partnership surfaces may evolve; the permanent product is judgment—how to allocate capital under uncertainty on Amazon.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container">
+        <div class="cta-inner">
+          <div>
+            <h2>Run your next product like a deal.</h2>
+            <p>
+              Start with the capital model and methodology. When you need ops systems behind the research,
+              the network runs on <a href="https://parsimony.com/" rel="noopener">Parsimony</a>
+              and operator coaching via <a href="https://catalyst88.com/" rel="noopener">Catalyst88</a>.
+            </p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-gold btn-lg" href="#calculator">Open capital model</a>
+            <a class="btn btn-ghost btn-lg" href="/methodology/">Methodology</a>
+            <a class="btn btn-sky btn-lg" href="/research/">Research book</a>
+          </div>
+        </div>
+        <p class="disclaimer">
+          <strong>Research disclaimer:</strong> Content on Big Sky ROI is for educational and informational purposes only.
+          Illustrative product theses, scores, and model outputs are not offers, solicitations, or guarantees of performance.
+          E-commerce results depend on execution, market conditions, fees, advertising, and factors outside our control.
+          We do not provide legal, tax, or securities investment advice. Big Sky ROI, LLC · 30 N Gould St, Suite R, Sheridan, WY 82801.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-text">Big Sky <span style="color:var(--gold)">ROI</span></div>
+          <p>Wall Street–grade investment research for Amazon product capital allocation. Built for operators who underwrite inventory like a portfolio.</p>
+        </div>
+        <div>
+          <h4>Desk</h4>
+          <ul>
+            <li><a href="#board">Conviction board</a></li>
+            <li><a href="#calculator">Capital model</a></li>
+            <li><a href="/methodology/">Methodology</a></li>
+            <li><a href="/research/">Research book</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Network</h4>
+          <ul>
+            <li><a href="https://parsimony.com/" rel="noopener">Parsimony</a></li>
+            <li><a href="https://catalyst88.com/" rel="noopener">Catalyst88</a></li>
+            <li><a href="https://humanitynow.ai/" rel="noopener">HumanityNow.ai</a></li>
+            <li><a href="https://axioniq.org/" rel="noopener">Axioniq</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Entity</h4>
+          <ul>
+            <li><a href="https://stevensimonson.com/" rel="noopener">Steve Simonson</a></li>
+            <li><a href="https://symoglobal.com/" rel="noopener">SYMO Global</a></li>
+            <li><span style="color:var(--faint);font-size:0.88rem;">Sheridan, WY 82801</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Big Sky ROI, LLC</span>
+        <span>Research desk · Not securities advice · bigskyroi.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/desk.js" defer></script>
+</body>
+</html>
