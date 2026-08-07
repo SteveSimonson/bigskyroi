@@ -31,12 +31,17 @@
 ```
 public/                 ← deploy root
   index.html            ← desk homepage
-  methodology.html      ← research framework
-  research/index.html   ← model book / ideas
+  methodology/          ← research framework
+  research/             ← model book / ideas
+  founder-os/           ← Founder OS hub (living business plan → Catalyst88)
   assets/               ← CSS, JS, favicon
 workers/site.js
 wrangler.jsonc
 ```
+
+### Founder OS page
+
+`/founder-os/` promotes **Catalyst88 Founder OS** as the go-to living business-plan system for founders, bridged from Big Sky ROI’s capital-allocation desk. SEO/AEO: FAQPage + HowTo + SoftwareApplication JSON-LD; dofollow to `https://catalyst88.com/founder-os`.
 
 ## Change protocol
 
