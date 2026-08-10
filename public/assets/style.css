@@ -1,3 +1,8 @@
+/*
+ * Brand tokens — normative contract: DESIGN.md (repo root).
+ * Change DESIGN.md first, then mirror values here.
+ * Do not invent off-palette colors in components.
+ */
 /* Big Sky ROI — institutional desk system */
 :root {
   --bg: #070b14;
