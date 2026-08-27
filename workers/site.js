@@ -46,21 +46,16 @@ async function handleRequest(request, env) {
     });
   }
 
-  // Legal pages: serve HTML at slash and no-slash paths (AdSense / crawler 200s).
-  const legalAssets = {
-    "/privacy": "/privacy.html",
-    "/privacy/": "/privacy.html",
-    "/privacy-policy": "/privacy-policy.html",
-    "/privacy-policy/": "/privacy-policy.html",
-    "/terms": "/terms.html",
-    "/terms/": "/terms.html",
-    "/about": "/about.html",
-    "/about/": "/about.html",
-  };
-  const legalAsset = legalAssets[url.pathname];
-  if (legalAsset) {
-    const assetReq = new Request(new URL(legalAsset, url.origin), request);
-    const res = await env.ASSETS.fetch(assetReq);
+  // Legal pages: pretty URLs (/privacy, not /privacy.html). Trailing slashes
+  // are rewritten internally so crawlers get 200 instead of a slash redirect.
+  const legalPaths = new Set(["/privacy", "/privacy-policy", "/terms", "/about"]);
+  const legalPath = url.pathname !== "/" && url.pathname.endsWith("/")
+    ? url.pathname.slice(0, -1)
+    : url.pathname;
+  if (legalPaths.has(legalPath)) {
+    const assetUrl = new URL(legalPath, url.origin);
+    assetUrl.search = url.search;
+    const res = await env.ASSETS.fetch(new Request(assetUrl, request));
     if (res.status !== 200) return res;
     const headers = new Headers(res.headers);
     headers.set("Content-Type", "text/html; charset=UTF-8");
