@@ -4,6 +4,7 @@
  * - force HTTPS
  * - HSTS on every response (including 301s and sitemap)
  * - sitemap.xml correct Content-Type
+ * - legal pages (/privacy, /privacy-policy, /terms, /about) return 200
  * - static assets for everything else
  */
 
@@ -41,6 +42,32 @@ async function handleRequest(request, env) {
     return new Response(res.body, {
       status: res.status,
       statusText: res.statusText,
+      headers,
+    });
+  }
+
+  // Legal pages: serve HTML at slash and no-slash paths (AdSense / crawler 200s).
+  const legalAssets = {
+    "/privacy": "/privacy.html",
+    "/privacy/": "/privacy.html",
+    "/privacy-policy": "/privacy-policy.html",
+    "/privacy-policy/": "/privacy-policy.html",
+    "/terms": "/terms.html",
+    "/terms/": "/terms.html",
+    "/about": "/about.html",
+    "/about/": "/about.html",
+  };
+  const legalAsset = legalAssets[url.pathname];
+  if (legalAsset) {
+    const assetReq = new Request(new URL(legalAsset, url.origin), request);
+    const res = await env.ASSETS.fetch(assetReq);
+    if (res.status !== 200) return res;
+    const headers = new Headers(res.headers);
+    headers.set("Content-Type", "text/html; charset=UTF-8");
+    headers.set("Cache-Control", "public, max-age=300, must-revalidate");
+    return new Response(res.body, {
+      status: 200,
+      statusText: "OK",
       headers,
     });
   }
