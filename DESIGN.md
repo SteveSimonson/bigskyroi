@@ -10,7 +10,7 @@ colors:
   amber: "#f59f00"
   bg: "#070b14"
   bg-elev: "#0a101c"
-  faint: "#5c6b86"
+  faint: "#7a8ba6"
   gold: "#e8b84a"
   gold-dim: "rgba(232, 184, 74, 0.14)"
   line: "#1a2744"
@@ -27,9 +27,9 @@ colors:
   text: "#e8edf5"
 typography:
   h1:
-    fontFamily: IBM Plex Sans
+    fontFamily: Newsreader
     fontSize: 2.5rem
-    fontWeight: 600
+    fontWeight: 500
   body-md:
     fontFamily: IBM Plex Sans
     fontSize: 1rem
@@ -82,7 +82,7 @@ Extracted from live CSS. Prefer these names in new work:
 | **amber** | `#f59f00` |
 | **bg** | `#070b14` |
 | **bg-elev** | `#0a101c` |
-| **faint** | `#5c6b86` |
+| **faint** | `#7a8ba6` |
 | **gold** | `#e8b84a` |
 | **gold-dim** | `rgba(232, 184, 74, 0.14)` |
 | **line** | `#1a2744` |
@@ -103,9 +103,11 @@ Extracted from live CSS. Prefer these names in new work:
 
 ## Typography
 
-- **Display:** IBM Plex Sans
-- **Body/UI:** IBM Plex Sans
-- Do not add a third family without updating this file.
+- **Display:** Newsreader (self-hosted latin, `/assets/fonts/newsreader-latin-wght-*.woff2`, SIL OFL)
+- **Body/UI:** IBM Plex Sans (self-hosted latin, `/assets/fonts/ibm-plex-sans-latin-wght-normal.woff2`, SIL OFL)
+- **Mono:** IBM Plex Mono (self-hosted latin, `/assets/fonts/ibm-plex-mono-latin-*-normal.woff2`, SIL OFL)
+- Do not add a fourth family without updating this file.
+- **faint** is WCAG AA (≥4.5:1) on `bg` / `panel` / `panel-2` for small text.
 
 ## Layout
 

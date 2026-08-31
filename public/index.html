@@ -22,9 +22,9 @@
   <meta name="twitter:description" content="Institutional research for Amazon product capital allocation — conviction scores, ROI model, desk notes." />
 
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/newsreader-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/assets/style.css" />
 
   <script type="application/ld+json">
@@ -117,6 +117,7 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="/">
@@ -147,18 +148,18 @@
       <span class="tick"><span class="tag">DESK</span> <span class="sym">Hurdle</span> cycle ROI ≥ 45% · net margin ≥ 18%</span>
       <span class="tick"><span class="tag">RISK</span> <span class="sym">Tariff</span> scenario book <span class="up">updated</span></span>
       <!-- duplicate for seamless loop -->
-      <span class="tick"><span class="tag">MACRO</span> <span class="sym">US eComm</span> spend growth <span class="up">+6.2% YoY</span></span>
-      <span class="tick"><span class="tag">AMZ</span> <span class="sym">Avg CPC</span> home &amp; kitchen <span class="dn">+4.1% MoM</span></span>
-      <span class="tick"><span class="tag">FBA</span> <span class="sym">Storage Q3</span> peak surcharge window <span class="up">WATCH</span></span>
-      <span class="tick"><span class="tag">FX</span> <span class="sym">CNY/USD</span> landed cost pressure <span class="dn">elevated</span></span>
-      <span class="tick"><span class="tag">CAT</span> <span class="sym">Pet</span> demand durability <span class="up">STRONG</span></span>
-      <span class="tick"><span class="tag">CAT</span> <span class="sym">Beauty tools</span> review density <span class="dn">crowded</span></span>
-      <span class="tick"><span class="tag">DESK</span> <span class="sym">Hurdle</span> cycle ROI ≥ 45% · net margin ≥ 18%</span>
-      <span class="tick"><span class="tag">RISK</span> <span class="sym">Tariff</span> scenario book <span class="up">updated</span></span>
+      <span class="tick" aria-hidden="true"><span class="tag">MACRO</span> <span class="sym">US eComm</span> spend growth <span class="up">+6.2% YoY</span></span>
+      <span class="tick" aria-hidden="true"><span class="tag">AMZ</span> <span class="sym">Avg CPC</span> home &amp; kitchen <span class="dn">+4.1% MoM</span></span>
+      <span class="tick" aria-hidden="true"><span class="tag">FBA</span> <span class="sym">Storage Q3</span> peak surcharge window <span class="up">WATCH</span></span>
+      <span class="tick" aria-hidden="true"><span class="tag">FX</span> <span class="sym">CNY/USD</span> landed cost pressure <span class="dn">elevated</span></span>
+      <span class="tick" aria-hidden="true"><span class="tag">CAT</span> <span class="sym">Pet</span> demand durability <span class="up">STRONG</span></span>
+      <span class="tick" aria-hidden="true"><span class="tag">CAT</span> <span class="sym">Beauty tools</span> review density <span class="dn">crowded</span></span>
+      <span class="tick" aria-hidden="true"><span class="tag">DESK</span> <span class="sym">Hurdle</span> cycle ROI ≥ 45% · net margin ≥ 18%</span>
+      <span class="tick" aria-hidden="true"><span class="tag">RISK</span> <span class="sym">Tariff</span> scenario book <span class="up">updated</span></span>
     </div>
   </div>
 
-  <main>
+  <main id="main">
     <!-- HERO -->
     <section class="hero">
       <div class="container hero-grid">
@@ -460,41 +461,41 @@
             <h3>Assumptions</h3>
             <div class="field-row">
               <div class="field">
-                <label>Unit landed cost <span class="hint" data-bind="unitCost">$10.00</span></label>
+                <label for="unit-cost">Unit landed cost <span class="hint" data-bind="unitCost">$10.00</span></label>
                 <input id="unit-cost" type="range" min="3" max="40" step="0.5" value="10" />
               </div>
               <div class="field">
-                <label>Sell price <span class="hint" data-bind="sellPrice">$39.99</span></label>
+                <label for="sell-price">Sell price <span class="hint" data-bind="sellPrice">$39.99</span></label>
                 <input id="sell-price" type="range" min="9" max="99" step="0.5" value="39.99" />
               </div>
             </div>
             <div class="field-row">
               <div class="field">
-                <label>First order units <span class="hint" data-bind="units">2,000</span></label>
+                <label for="units">First order units <span class="hint" data-bind="units">2,000</span></label>
                 <input id="units" type="range" min="200" max="10000" step="50" value="2000" />
               </div>
               <div class="field">
-                <label>FBA fee / unit <span class="hint" data-bind="fbaFee">$5.40</span></label>
+                <label for="fba-fee">FBA fee / unit <span class="hint" data-bind="fbaFee">$5.40</span></label>
                 <input id="fba-fee" type="range" min="2" max="15" step="0.1" value="5.4" />
               </div>
             </div>
             <div class="field-row">
               <div class="field">
-                <label>Referral fee <span class="hint" data-bind="referral">15%</span></label>
+                <label for="referral">Referral fee <span class="hint" data-bind="referral">15%</span></label>
                 <input id="referral" type="range" min="8" max="20" step="0.5" value="15" />
               </div>
               <div class="field">
-                <label>Ad spend (ACOS proxy) <span class="hint" data-bind="adPct">14%</span></label>
+                <label for="ad-pct">Ad spend (ACOS proxy) <span class="hint" data-bind="adPct">14%</span></label>
                 <input id="ad-pct" type="range" min="0" max="40" step="1" value="14" />
               </div>
             </div>
             <div class="field-row">
               <div class="field">
-                <label>Other (returns, promo) <span class="hint" data-bind="otherPct">4%</span></label>
+                <label for="other-pct">Other (returns, promo) <span class="hint" data-bind="otherPct">4%</span></label>
                 <input id="other-pct" type="range" min="0" max="15" step="0.5" value="4" />
               </div>
               <div class="field">
-                <label>Cycle length <span class="hint" data-bind="months">4 mo</span></label>
+                <label for="months">Cycle length <span class="hint" data-bind="months">4 mo</span></label>
                 <input id="months" type="range" min="1" max="12" step="1" value="4" />
               </div>
             </div>
@@ -696,7 +697,7 @@
           <p>Wall Street–grade investment research for Amazon product capital allocation. Built for operators who underwrite inventory like a portfolio.</p>
         </div>
         <div>
-          <h4>Desk</h4>
+          <h3>Desk</h3>
           <ul>
             <li><a href="#board">Conviction board</a></li>
             <li><a href="#calculator">Capital model</a></li>
@@ -706,7 +707,7 @@
           </ul>
         </div>
         <div>
-          <h4>Network</h4>
+          <h3>Network</h3>
           <ul>
             <li><a href="https://parsimony.com/" rel="noopener">Parsimony</a></li>
             <li><a href="https://catalyst88.com/" rel="noopener">Catalyst88</a></li>
@@ -716,7 +717,7 @@
           </ul>
         </div>
         <div>
-          <h4>Entity</h4>
+          <h3>Entity</h3>
           <ul>
             <li><a href="https://stevensimonson.com/" rel="noopener">Steve Simonson</a></li>
             <li><a href="https://symoglobal.com/" rel="noopener">SYMO Global</a></li>
