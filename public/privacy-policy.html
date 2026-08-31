@@ -13,9 +13,8 @@
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#070B14" />
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/assets/fonts/ibm-plex-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/assets/style.css" />
   <script type="application/ld+json">
   {
@@ -31,6 +30,7 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="/">
@@ -50,7 +50,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <div class="page-hero">
       <div class="container">
         <p class="eyebrow">Legal · Privacy</p>
@@ -159,7 +159,7 @@
           <p>Wall Street–grade investment research for Amazon product capital allocation.</p>
         </div>
         <div>
-          <h4>Desk</h4>
+          <h3>Desk</h3>
           <ul>
             <li><a href="/#board">Conviction board</a></li>
             <li><a href="/#calculator">Capital model</a></li>
@@ -169,7 +169,7 @@
           </ul>
         </div>
         <div>
-          <h4>Network</h4>
+          <h3>Network</h3>
           <ul>
             <li><a href="https://parsimony.com/" rel="noopener">Parsimony</a></li>
             <li><a href="https://catalyst88.com/" rel="noopener">Catalyst88</a></li>
@@ -178,7 +178,7 @@
           </ul>
         </div>
         <div>
-          <h4>Entity</h4>
+          <h3>Entity</h3>
           <ul>
             <li><a href="https://stevensimonson.com/" rel="noopener">Steve Simonson</a></li>
             <li><a href="/about">About</a></li>

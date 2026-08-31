@@ -2,11 +2,13 @@
   "name": "bigskyroi",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "bigskyroi.com — Wall Street-grade investment research for Amazon product capital allocation",
   "scripts": {
     "dev": "npx wrangler dev",
     "deploy": "npx wrangler deploy",
     "preview": "cd public && python3 -m http.server 8892",
+    "test": "node --test tests/*.test.mjs",
     "indexnow": "node scripts/indexnow.mjs"
   },
   "devDependencies": {
