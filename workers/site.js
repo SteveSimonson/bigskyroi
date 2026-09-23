@@ -13,7 +13,7 @@
  */
 
 const CANONICAL_HOST = "bigskyroi.com";
-const HSTS = "max-age=31536000";
+const HSTS = "max-age=31536000; includeSubDomains";
 const HTML_CACHE = "public, max-age=0, must-revalidate";
 const FONT_CACHE = "public, max-age=31536000, immutable";
 const HASHED_CACHE = "public, max-age=31536000, immutable";
