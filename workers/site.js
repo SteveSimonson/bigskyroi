@@ -2,7 +2,7 @@
  * Edge Worker for bigskyroi.com
  * - www → apex 301
  * - force HTTPS
- * - HSTS on every response (including 301s and sitemap)
+ * - HSTS, CSP, X-Frame-Options, and nosniff on every response (including 301s)
  * - HEAD never subfetches ASSETS with the incoming HEAD method
  * - Cache: hashed /assets + fonts immutable 1y; unhashed JS/CSS 1d;
  *   brand ~7d; HTML max-age=0
@@ -14,6 +14,19 @@
 
 const CANONICAL_HOST = "bigskyroi.com";
 const HSTS = "max-age=31536000; includeSubDomains";
+const CONTENT_SECURITY_POLICY = [
+  "default-src 'self'",
+  "base-uri 'self'",
+  "object-src 'none'",
+  "frame-ancestors 'none'",
+  "form-action 'self'",
+  "img-src 'self' data:",
+  "font-src 'self'",
+  "style-src 'self' 'unsafe-inline'",
+  "script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com",
+  "connect-src 'self' https://cloudflareinsights.com",
+  "upgrade-insecure-requests",
+].join("; ");
 const HTML_CACHE = "public, max-age=0, must-revalidate";
 const FONT_CACHE = "public, max-age=31536000, immutable";
 const HASHED_CACHE = "public, max-age=31536000, immutable";
@@ -42,6 +55,8 @@ function withHsts(res) {
   const out = new Response(res.body, res);
   out.headers.set("Strict-Transport-Security", HSTS);
   out.headers.set("X-Content-Type-Options", "nosniff");
+  out.headers.set("X-Frame-Options", "DENY");
+  out.headers.set("Content-Security-Policy", CONTENT_SECURITY_POLICY);
   return out;
 }
 
